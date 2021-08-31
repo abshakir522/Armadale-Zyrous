@@ -14,8 +14,11 @@
         }
     ],
     "require": {
-        "pantheon-upstreams/upstream-configuration": "*",
-        "drush/drush": "^10"
+        "drupal/admin_toolbar": "^3.0",
+        "drupal/bee": "^1.2",
+        "drupal/webform": "^6.0",
+        "drush/drush": "^10.6",
+        "pantheon-upstreams/upstream-configuration": "*"
     },
     "conflict": {
             "drupal/drupal": "*"

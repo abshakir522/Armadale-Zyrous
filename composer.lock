@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "86c22ee257c3107b6ba6dad15354de4f",
+    "content-hash": "1cbddc6d853cfae91aa8fcb2d5f2bdf3",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1320,6 +1320,538 @@
             "time": "2020-10-27T21:46:55+00:00"
         },
         {
+            "name": "drupal/admin_toolbar",
+            "version": "3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/admin_toolbar.git",
+                "reference": "3.0.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-3.0.2.zip",
+                "reference": "3.0.2",
+                "shasum": "a3b7a8030695d0c1d49ec57786321e2dd142184a"
+            },
+            "require": {
+                "drupal/core": "^8.8.0 || ^9.0"
+            },
+            "require-dev": {
+                "drupal/admin_toolbar_tools": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.0.2",
+                    "datestamp": "1629907124",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Wilfrid Roze (eme)",
+                    "homepage": "https://www.drupal.org/u/eme",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Romain Jarraud (romainj)",
+                    "homepage": "https://www.drupal.org/u/romainj",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Adrian Cid Almaguer (adriancid)",
+                    "homepage": "https://www.drupal.org/u/adriancid",
+                    "email": "adriancid@gmail.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Mohamed Anis Taktak (matio89)",
+                    "homepage": "https://www.drupal.org/u/matio89",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "fethi.krout",
+                    "homepage": "https://www.drupal.org/user/3206765"
+                },
+                {
+                    "name": "matio89",
+                    "homepage": "https://www.drupal.org/user/2320090"
+                },
+                {
+                    "name": "romainj",
+                    "homepage": "https://www.drupal.org/user/370706"
+                }
+            ],
+            "description": "Provides a drop-down menu interface to the core Drupal Toolbar.",
+            "homepage": "http://drupal.org/project/admin_toolbar",
+            "keywords": [
+                "Drupal",
+                "Toolbar"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/admin_toolbar",
+                "issues": "https://www.drupal.org/project/issues/admin_toolbar"
+            }
+        },
+        {
+            "name": "drupal/bat",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/bat.git",
+                "reference": "8.x-1.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bat-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "2f3d4ffb7b6b6c1e8ff6d5faddb9e6cde25e6349"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "rlanvin/php-rrule": "^2.2",
+                "roomify/bat": "~1.3"
+            },
+            "require-dev": {
+                "drupal/bat_api": "*",
+                "drupal/bat_booking": "*",
+                "drupal/bat_event": "*",
+                "drupal/bat_facets": "*",
+                "drupal/bat_fullcalendar": "*",
+                "drupal/bat_unit": "*",
+                "drupal/commerce": "*",
+                "drupal/facets": "*",
+                "drupal/fullcalendar_library": "*",
+                "drupal/search_api": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.3",
+                    "datestamp": "1593189005",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "acrollet",
+                    "homepage": "https://www.drupal.org/user/253909"
+                },
+                {
+                    "name": "cecrs",
+                    "homepage": "https://www.drupal.org/user/1876384"
+                },
+                {
+                    "name": "ronald_istos",
+                    "homepage": "https://www.drupal.org/user/200188"
+                }
+            ],
+            "description": "A generalized Booking and Availability Management Framework",
+            "homepage": "http://drupal.org/project/bat",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/bat",
+                "issues": "http://drupal.org/project/issues/bat"
+            }
+        },
+        {
+            "name": "drupal/bat_api",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/bat_api.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bat_api-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "a18915cc566f16399a0eba0dab61ddc300fc8c43"
+            },
+            "require": {
+                "drupal/bat_event": "*",
+                "drupal/core": "^8 || ^9",
+                "drupal/services": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1593189091",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "acrollet",
+                    "homepage": "https://www.drupal.org/user/253909"
+                },
+                {
+                    "name": "cecrs",
+                    "homepage": "https://www.drupal.org/user/1876384"
+                },
+                {
+                    "name": "ronald_istos",
+                    "homepage": "https://www.drupal.org/user/200188"
+                }
+            ],
+            "description": "Provides API access to BAT Booking and Availability Data for Drupal 8",
+            "homepage": "https://www.drupal.org/project/bat_api",
+            "support": {
+                "source": "https://git.drupalcode.org/project/bat_api"
+            }
+        },
+        {
+            "name": "drupal/bat_booking",
+            "version": "1.3.0",
+            "require": {
+                "drupal/bat": "self.version",
+                "drupal/bat_event": "*",
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "metapackage",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.3",
+                    "datestamp": "1593189005",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "acrollet",
+                    "homepage": "https://www.drupal.org/user/253909"
+                },
+                {
+                    "name": "cecrs",
+                    "homepage": "https://www.drupal.org/user/1876384"
+                },
+                {
+                    "name": "ronald_istos",
+                    "homepage": "https://www.drupal.org/user/200188"
+                }
+            ],
+            "description": "BAT Booking",
+            "homepage": "https://www.drupal.org/project/bat",
+            "support": {
+                "source": "https://git.drupalcode.org/project/bat"
+            }
+        },
+        {
+            "name": "drupal/bat_event",
+            "version": "1.3.0",
+            "require": {
+                "drupal/bat": "self.version",
+                "drupal/bat_unit": "*",
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "metapackage",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.3",
+                    "datestamp": "1593189005",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "acrollet",
+                    "homepage": "https://www.drupal.org/user/253909"
+                },
+                {
+                    "name": "cecrs",
+                    "homepage": "https://www.drupal.org/user/1876384"
+                },
+                {
+                    "name": "ronald_istos",
+                    "homepage": "https://www.drupal.org/user/200188"
+                }
+            ],
+            "description": "Create and administer events for BAT.",
+            "homepage": "https://www.drupal.org/project/bat",
+            "support": {
+                "source": "https://git.drupalcode.org/project/bat"
+            }
+        },
+        {
+            "name": "drupal/bat_event_series",
+            "version": "1.3.0",
+            "require": {
+                "drupal/bat": "self.version",
+                "drupal/bat_event": "*",
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "metapackage",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.3",
+                    "datestamp": "1593189005",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "acrollet",
+                    "homepage": "https://www.drupal.org/user/253909"
+                },
+                {
+                    "name": "cecrs",
+                    "homepage": "https://www.drupal.org/user/1876384"
+                },
+                {
+                    "name": "ronald_istos",
+                    "homepage": "https://www.drupal.org/user/200188"
+                }
+            ],
+            "description": "Create and administer series of BAT events.",
+            "homepage": "https://www.drupal.org/project/bat",
+            "support": {
+                "source": "https://git.drupalcode.org/project/bat"
+            }
+        },
+        {
+            "name": "drupal/bat_event_ui",
+            "version": "1.3.0",
+            "require": {
+                "drupal/bat": "self.version",
+                "drupal/bat_fullcalendar": "*",
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "metapackage",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.3",
+                    "datestamp": "1593189005",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "acrollet",
+                    "homepage": "https://www.drupal.org/user/253909"
+                },
+                {
+                    "name": "cecrs",
+                    "homepage": "https://www.drupal.org/user/1876384"
+                },
+                {
+                    "name": "ronald_istos",
+                    "homepage": "https://www.drupal.org/user/200188"
+                }
+            ],
+            "description": "Interface support to the BAT Event module.",
+            "homepage": "https://www.drupal.org/project/bat",
+            "support": {
+                "source": "https://git.drupalcode.org/project/bat"
+            }
+        },
+        {
+            "name": "drupal/bat_fullcalendar",
+            "version": "1.3.0",
+            "require": {
+                "drupal/bat": "self.version",
+                "drupal/bat_api": "*",
+                "drupal/bat_event": "*",
+                "drupal/core": "^8 || ^9",
+                "drupal/fullcalendar_library": "*"
+            },
+            "type": "metapackage",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.3",
+                    "datestamp": "1593189005",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "acrollet",
+                    "homepage": "https://www.drupal.org/user/253909"
+                },
+                {
+                    "name": "cecrs",
+                    "homepage": "https://www.drupal.org/user/1876384"
+                },
+                {
+                    "name": "ronald_istos",
+                    "homepage": "https://www.drupal.org/user/200188"
+                }
+            ],
+            "description": "Provides a generalized API for manipulating FullCalendar widgets for BAT",
+            "homepage": "https://www.drupal.org/project/bat",
+            "support": {
+                "source": "https://git.drupalcode.org/project/bat"
+            }
+        },
+        {
+            "name": "drupal/bat_unit",
+            "version": "1.3.0",
+            "require": {
+                "drupal/bat": "*",
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "metapackage",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.3",
+                    "datestamp": "1593189005",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "acrollet",
+                    "homepage": "https://www.drupal.org/user/253909"
+                },
+                {
+                    "name": "cecrs",
+                    "homepage": "https://www.drupal.org/user/1876384"
+                },
+                {
+                    "name": "ronald_istos",
+                    "homepage": "https://www.drupal.org/user/200188"
+                }
+            ],
+            "description": "Create and manage units (e.g. rooms).",
+            "homepage": "https://www.drupal.org/project/bat",
+            "support": {
+                "source": "https://git.drupalcode.org/project/bat"
+            }
+        },
+        {
+            "name": "drupal/bee",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/bee.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bee-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "e61c2c4c214ee60162cd13e78bf470b9ff0def21"
+            },
+            "require": {
+                "drupal/bat_booking": "*",
+                "drupal/bat_event_series": "*",
+                "drupal/bat_event_ui": "*",
+                "drupal/core": "^8 || ^9",
+                "drupal/office_hours": "*"
+            },
+            "require-dev": {
+                "drupal/token": "*",
+                "drupal/webform": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1604331669",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "acrollet",
+                    "homepage": "https://www.drupal.org/user/253909"
+                },
+                {
+                    "name": "cecrs",
+                    "homepage": "https://www.drupal.org/user/1876384"
+                },
+                {
+                    "name": "nicola85",
+                    "homepage": "https://www.drupal.org/user/1746956"
+                },
+                {
+                    "name": "scalas89",
+                    "homepage": "https://www.drupal.org/user/3048331"
+                }
+            ],
+            "description": "Bookable Entities Everywhere",
+            "homepage": "http://drupal.org/project/bee",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/bee",
+                "issues": "http://drupal.org/project/issues/bee"
+            }
+        },
+        {
             "name": "drupal/core",
             "version": "9.2.4",
             "source": {
@@ -1709,6 +2241,376 @@
                 "source": "https://github.com/drupal/core-recommended/tree/9.2.4"
             },
             "time": "2021-08-12T17:48:08+00:00"
+        },
+        {
+            "name": "drupal/ctools",
+            "version": "3.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ctools.git",
+                "reference": "8.x-3.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.7.zip",
+                "reference": "8.x-3.7",
+                "shasum": "b11c0981a1d2ab3cc9e8e614a337d8e2a2a70c0e"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-3.7",
+                    "datestamp": "1623860918",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "branch-alias": {
+                    "dev-8.x-3.x": "3.x-dev"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Kris Vanderwater (EclipseGc)",
+                    "homepage": "https://www.drupal.org/u/eclipsegc",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Jakob Perry (japerry)",
+                    "homepage": "https://www.drupal.org/u/japerry",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Tim Plunkett (tim.plunkett)",
+                    "homepage": "https://www.drupal.org/u/timplunkett",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "James Gilliland (neclimdul)",
+                    "homepage": "https://www.drupal.org/u/neclimdul",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Daniel Wehner (dawehner)",
+                    "homepage": "https://www.drupal.org/u/dawehner",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "joelpittet",
+                    "homepage": "https://www.drupal.org/user/160302"
+                },
+                {
+                    "name": "merlinofchaos",
+                    "homepage": "https://www.drupal.org/user/26979"
+                },
+                {
+                    "name": "neclimdul",
+                    "homepage": "https://www.drupal.org/user/48673"
+                },
+                {
+                    "name": "sdboyer",
+                    "homepage": "https://www.drupal.org/user/146719"
+                },
+                {
+                    "name": "sun",
+                    "homepage": "https://www.drupal.org/user/54136"
+                },
+                {
+                    "name": "tim.plunkett",
+                    "homepage": "https://www.drupal.org/user/241634"
+                }
+            ],
+            "description": "Provides a number of utility and helper APIs for Drupal developers and site builders.",
+            "homepage": "https://www.drupal.org/project/ctools",
+            "support": {
+                "source": "https://git.drupalcode.org/project/ctools",
+                "issues": "https://www.drupal.org/project/issues/ctools"
+            }
+        },
+        {
+            "name": "drupal/fullcalendar_library",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/fullcalendar_library.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/fullcalendar_library-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "d6a12606f199756248b997088fce11e4ba88353b"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1593189762",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "acrollet",
+                    "homepage": "https://www.drupal.org/user/253909"
+                }
+            ],
+            "description": "Fullcalendar library",
+            "homepage": "https://www.drupal.org/project/fullcalendar_library",
+            "support": {
+                "source": "https://git.drupalcode.org/project/fullcalendar_library"
+            }
+        },
+        {
+            "name": "drupal/office_hours",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/office_hours.git",
+                "reference": "8.x-1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/office_hours-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "745079dfca40222a034da0475e516c0aa1317c67"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.5",
+                    "datestamp": "1623916796",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "John Voskuilen",
+                    "homepage": "https://www.drupal.org/user/167994",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "johnv",
+                    "homepage": "https://www.drupal.org/user/591042"
+                },
+                {
+                    "name": "mikl",
+                    "homepage": "https://www.drupal.org/user/58679"
+                },
+                {
+                    "name": "skwashd",
+                    "homepage": "https://www.drupal.org/user/116305"
+                }
+            ],
+            "description": "Defines a 'weekly office hours' field type, allowing you to specify when an Entity is open or closed.",
+            "homepage": "http://drupal.org/project/office_hours",
+            "support": {
+                "source": "http://cgit.drupalcode.org/office_hours",
+                "issues": "http://drupal.org/project/office_hours",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
+            "name": "drupal/services",
+            "version": "4.0.0-beta6",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/services.git",
+                "reference": "8.x-4.0-beta6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/services-8.x-4.0-beta6.zip",
+                "reference": "8.x-4.0-beta6",
+                "shasum": "eb7c0809d50c87819a23d80f3c66e9318a98effc"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/ctools": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-4.0-beta6",
+                    "datestamp": "1622397636",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "See contributors",
+                    "homepage": "https://www.drupal.org/node/109640/committers",
+                    "role": "Developer"
+                },
+                {
+                    "name": "jcnventura",
+                    "homepage": "https://www.drupal.org/user/122464"
+                },
+                {
+                    "name": "kylebrowning",
+                    "homepage": "https://www.drupal.org/user/211387"
+                },
+                {
+                    "name": "marcingy",
+                    "homepage": "https://www.drupal.org/user/77320"
+                },
+                {
+                    "name": "tyler.frankenstein",
+                    "homepage": "https://www.drupal.org/user/150680"
+                }
+            ],
+            "description": "A standardized solution of integrating external applications with Drupal.",
+            "homepage": "https://www.drupal.org/project/services",
+            "support": {
+                "source": "https://git.drupalcode.org/project/services",
+                "issues": "https://www.drupal.org/project/issues/services"
+            }
+        },
+        {
+            "name": "drupal/webform",
+            "version": "6.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/webform.git",
+                "reference": "6.0.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webform-6.0.5.zip",
+                "reference": "6.0.5",
+                "shasum": "a925d604e3b4a29f5a688a8e84fdb3a93490f641"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "require-dev": {
+                "drupal/address": "~1.0",
+                "drupal/bootstrap": "~3.0",
+                "drupal/captcha": "~1.0",
+                "drupal/chosen": "~3.0",
+                "drupal/clientside_validation": "~3.0",
+                "drupal/clientside_validation_jquery": "*",
+                "drupal/devel": "~3.0",
+                "drupal/entity": "~1.0",
+                "drupal/entity_print": "~2.0",
+                "drupal/gnode": "*",
+                "drupal/group": "1.0",
+                "drupal/jquery_ui": "~1.0",
+                "drupal/jquery_ui_checkboxradio": "~1.0",
+                "drupal/jquery_ui_datepicker": "~1.0",
+                "drupal/lingotek": "~3.0",
+                "drupal/mailsystem": "~4.0",
+                "drupal/paragraphs": "~1.0",
+                "drupal/select2": "~1.0",
+                "drupal/smtp": "~1.0",
+                "drupal/styleguide": "~1.0",
+                "drupal/telephone_validation": "~2.0",
+                "drupal/token": "~1.0",
+                "drupal/variationcache": "~1.0",
+                "drupal/webform_access": "*",
+                "drupal/webform_attachment": "*",
+                "drupal/webform_clientside_validation": "*",
+                "drupal/webform_devel": "*",
+                "drupal/webform_entity_print": "*",
+                "drupal/webform_group": "*",
+                "drupal/webform_node": "*",
+                "drupal/webform_options_limit": "*",
+                "drupal/webform_scheduled_email": "*",
+                "drupal/webform_share": "*",
+                "drupal/webform_ui": "*"
+            },
+            "suggest": {
+                "drupal/jquery_ui_checkboxradio": "Provides jQuery UI Checkboxradio library. Required by the Webform jQueryUI Buttons module. The Webform jQueryUI Buttons module is deprecated because jQueryUI is no longer maintained.",
+                "drupal/jquery_ui_datepicker": "Provides jQuery UI Datepicker library. Required to support datepickers. The Webform jQueryUI Datepicker module is deprecated because jQueryUI is no longer maintained."
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "6.0.5",
+                    "datestamp": "1629909787",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9 || ^10"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jacob Rockowitz (jrockowitz)",
+                    "homepage": "https://www.drupal.org/u/jrockowitz",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Alexander Trotsenko (bucefal91)",
+                    "homepage": "https://www.drupal.org/u/bucefal91",
+                    "role": "Co-maintainer"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://www.drupal.org/node/7404/committers",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "quicksketch",
+                    "homepage": "https://www.drupal.org/user/35821"
+                },
+                {
+                    "name": "torotil",
+                    "homepage": "https://www.drupal.org/user/865256"
+                }
+            ],
+            "description": "Enables the creation of webforms and questionnaires.",
+            "homepage": "https://drupal.org/project/webform",
+            "support": {
+                "source": "https://git.drupalcode.org/project/webform",
+                "issues": "https://www.drupal.org/project/issues/webform?version=8.x",
+                "docs": "https://www.drupal.org/docs/8/modules/webform",
+                "forum": "https://drupal.stackexchange.com/questions/tagged/webform"
+            }
         },
         {
             "name": "drush/drush",
@@ -3536,6 +4438,105 @@
                 "source": "https://github.com/ralouphie/getallheaders/tree/develop"
             },
             "time": "2019-03-08T08:55:37+00:00"
+        },
+        {
+            "name": "rlanvin/php-rrule",
+            "version": "v2.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rlanvin/php-rrule.git",
+                "reference": "4e979ff9b1122e7b5f4b4faf87a000396af12d16"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rlanvin/php-rrule/zipball/4e979ff9b1122e7b5f4b4faf87a000396af12d16",
+                "reference": "4e979ff9b1122e7b5f4b4faf87a000396af12d16",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "phpmd/phpmd": "@stable",
+                "phpunit/phpunit": "^5.7|^6.5|^8.0"
+            },
+            "suggest": {
+                "ext-intl": "Intl extension is needed for humanReadable()"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "RRule\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Lightweight and fast recurrence rules for PHP (RFC 5545)",
+            "homepage": "https://github.com/rlanvin/php-rrule",
+            "keywords": [
+                "date",
+                "ical",
+                "recurrence",
+                "recurring",
+                "rrule"
+            ],
+            "time": "2021-01-09T13:20:09+00:00"
+        },
+        {
+            "name": "roomify/bat",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Roomify/bat.git",
+                "reference": "1034b29ee1a54031de87677632888d3873244e9e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Roomify/bat/zipball/1034b29ee1a54031de87677632888d3873244e9e",
+                "reference": "1034b29ee1a54031de87677632888d3873244e9e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/dbunit": ">=1.2",
+                "phpunit/phpunit": "7.*",
+                "scrutinizer/ocular": "~1.1",
+                "squizlabs/php_codesniffer": "~2.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Roomify\\Bat\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roomify",
+                    "email": "hello@roomify.us",
+                    "homepage": "https://roomify.us",
+                    "role": "Developing Organization"
+                }
+            ],
+            "description": "A booking and availability management library",
+            "homepage": "https://github.com/roomify/bat",
+            "keywords": [
+                "availability management",
+                "bat",
+                "booking",
+                "booking engine",
+                "reservations",
+                "roomify",
+                "sharing economy"
+            ],
+            "time": "2020-08-25T16:07:22+00:00"
         },
         {
             "name": "stack/builder",
@@ -6485,5 +7486,5 @@
     "platform-overrides": {
         "php": "7.4"
     },
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "1.1.0"
 }
