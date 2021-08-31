@@ -1,0 +1,23 @@
+uuid: c52d05c3-29bb-461e-8eaf-28d992b4368d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.venues_facilities_for_hire
+  module:
+    - text
+id: node.venues_facilities_for_hire.body
+field_name: body
+entity_type: node
+bundle: venues_facilities_for_hire
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

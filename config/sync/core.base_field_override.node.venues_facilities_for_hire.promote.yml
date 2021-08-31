@@ -1,0 +1,22 @@
+uuid: 7f5c3a07-fb13-4798-ae63-b112ddfd0fe3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.venues_facilities_for_hire
+id: node.venues_facilities_for_hire.promote
+field_name: promote
+entity_type: node
+bundle: venues_facilities_for_hire
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

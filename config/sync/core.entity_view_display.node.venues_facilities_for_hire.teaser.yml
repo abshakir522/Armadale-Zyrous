@@ -1,0 +1,34 @@
+uuid: 5acd758b-2da2-45d5-904d-6687b06e5bcd
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.venues_facilities_for_hire.body
+    - field.field.node.venues_facilities_for_hire.field_region
+    - field.field.node.venues_facilities_for_hire.field_upload_images
+    - node.type.venues_facilities_for_hire
+  module:
+    - text
+    - user
+id: node.venues_facilities_for_hire.teaser
+targetEntityType: node
+bundle: venues_facilities_for_hire
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_region: true
+  field_upload_images: true

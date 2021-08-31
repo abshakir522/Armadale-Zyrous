@@ -1,0 +1,38 @@
+uuid: e11e3ebe-1e31-4bdc-99cb-6e8da05b38c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_upload_images
+    - node.type.venues_facilities_for_hire
+  module:
+    - image
+id: node.venues_facilities_for_hire.field_upload_images
+field_name: field_upload_images
+entity_type: node
+bundle: venues_facilities_for_hire
+label: 'Upload Images'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image
