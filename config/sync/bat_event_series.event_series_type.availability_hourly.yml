@@ -1,0 +1,10 @@
+uuid: e3942877-6d69-4902-ae76-3f6e967581df
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: wSvhzK3EwzynN8Aot60pwWrwPx2QjHJ1Ueb00DoE1gw
+name: 'Availability Hourly'
+type: availability_hourly
+event_granularity: bat_hourly
+target_event_type: availability_hourly

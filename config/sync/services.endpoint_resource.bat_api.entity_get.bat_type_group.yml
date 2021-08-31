@@ -1,0 +1,17 @@
+uuid: c7cd305f-3987-4bdf-8de7-0234a9270d6f
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: 3bobTcLZNgB76Nz6eHTj_MnaZpjzlJIgFjz3oJlSjrQ
+id: bat_api.entity_get.bat_type_group
+service_plugin_id: 'entity_get:bat_type_group'
+service_endpoint_id: bat_api
+formats:
+  json: json
+  hal_json: '0'
+  xml: '0'
+authentication:
+  cookie: cookie

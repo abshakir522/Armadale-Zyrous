@@ -1,0 +1,13 @@
+uuid: e2286e05-b762-4d4e-a255-2b79424df721
+langcode: en
+status: true
+dependencies:
+  module:
+    - bat_unit
+_core:
+  default_config_hash: AqloQjk_3ncjLiWdhBZW1x30R7vpiaukPx07dFj4SIo
+id: unit_set_state_action
+label: 'Assign fixed-state event to units'
+type: bat_unit
+plugin: unit_set_state_action
+configuration: {  }
