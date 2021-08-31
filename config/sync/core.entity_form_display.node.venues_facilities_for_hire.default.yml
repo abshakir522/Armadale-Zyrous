@@ -4,12 +4,17 @@ status: true
 dependencies:
   config:
     - field.field.node.venues_facilities_for_hire.body
+    - field.field.node.venues_facilities_for_hire.field_banner_image
+    - field.field.node.venues_facilities_for_hire.field_facilities_for_hire
+    - field.field.node.venues_facilities_for_hire.field_location
     - field.field.node.venues_facilities_for_hire.field_region
+    - field.field.node.venues_facilities_for_hire.field_room
     - field.field.node.venues_facilities_for_hire.field_upload_images
     - image.style.thumbnail
     - node.type.venues_facilities_for_hire
   module:
     - image
+    - paragraphs_table
     - path
     - text
 id: node.venues_facilities_for_hire.default
@@ -33,11 +38,69 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_banner_image:
+    weight: 127
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_facilities_for_hire:
+    type: paragraphs_table_widget
+    weight: 126
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      vertical: false
+      paste_clipboard: false
+      show_all: false
+      duplicate: false
+      features:
+        duplicate: duplicate
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+    third_party_settings: {  }
+    region: content
+  field_location:
+    weight: 124
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_region:
     weight: 122
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
+  field_room:
+    type: paragraphs_table_widget
+    weight: 125
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      vertical: false
+      paste_clipboard: false
+      show_all: false
+      duplicate: false
+      features:
+        duplicate: duplicate
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+    third_party_settings: {  }
     region: content
   field_upload_images:
     weight: 123

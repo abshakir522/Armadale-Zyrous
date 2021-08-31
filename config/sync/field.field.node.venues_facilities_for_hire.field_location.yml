@@ -1,0 +1,19 @@
+uuid: 86156e66-c69c-4071-a593-05e20354c2cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location
+    - node.type.venues_facilities_for_hire
+id: node.venues_facilities_for_hire.field_location
+field_name: field_location
+entity_type: node
+bundle: venues_facilities_for_hire
+label: Location
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

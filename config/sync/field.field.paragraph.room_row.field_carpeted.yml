@@ -1,0 +1,19 @@
+uuid: b8f3911f-35e5-4657-8237-704d8ec79c5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_carpeted
+    - paragraphs.paragraphs_type.room_row
+id: paragraph.room_row.field_carpeted
+field_name: field_carpeted
+entity_type: paragraph
+bundle: room_row
+label: Carpeted
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

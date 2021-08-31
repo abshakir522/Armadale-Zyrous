@@ -1,0 +1,59 @@
+uuid: 307e9543-6b4f-4011-a5d8-e0ceb9c18a15
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.room_row.field_capacity
+    - field.field.paragraph.room_row.field_carpeted
+    - field.field.paragraph.room_row.field_chairs
+    - field.field.paragraph.room_row.field_room
+    - field.field.paragraph.room_row.field_tables
+    - paragraphs.paragraphs_type.room_row
+id: paragraph.room_row.default
+targetEntityType: paragraph
+bundle: room_row
+mode: default
+content:
+  field_capacity:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_carpeted:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_chairs:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_room:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_tables:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

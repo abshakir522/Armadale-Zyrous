@@ -1,0 +1,19 @@
+uuid: c75ac412-e26d-48eb-91ec-d3fe8b75fb73
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_capacity
+    - paragraphs.paragraphs_type.room_row
+id: paragraph.room_row.field_capacity
+field_name: field_capacity
+entity_type: paragraph
+bundle: room_row
+label: Capacity
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

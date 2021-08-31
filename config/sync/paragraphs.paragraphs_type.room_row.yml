@@ -1,0 +1,10 @@
+uuid: 02bfd320-bd13-42b8-8228-8cc76f8f1522
+langcode: en
+status: true
+dependencies: {  }
+id: room_row
+label: 'Room Row'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,19 @@
+uuid: b7bf8d8d-e780-43cd-b322-50933f9e86fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tables
+    - paragraphs.paragraphs_type.room_row
+id: paragraph.room_row.field_tables
+field_name: field_tables
+entity_type: paragraph
+bundle: room_row
+label: Tables
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

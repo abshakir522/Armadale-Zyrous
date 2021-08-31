@@ -5,7 +5,11 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.venues_facilities_for_hire.body
+    - field.field.node.venues_facilities_for_hire.field_banner_image
+    - field.field.node.venues_facilities_for_hire.field_facilities_for_hire
+    - field.field.node.venues_facilities_for_hire.field_location
     - field.field.node.venues_facilities_for_hire.field_region
+    - field.field.node.venues_facilities_for_hire.field_room
     - field.field.node.venues_facilities_for_hire.field_upload_images
     - node.type.venues_facilities_for_hire
   module:
@@ -30,5 +34,9 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_banner_image: true
+  field_facilities_for_hire: true
+  field_location: true
   field_region: true
+  field_room: true
   field_upload_images: true

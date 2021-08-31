@@ -1,0 +1,32 @@
+uuid: 4fe5d0a5-0bb5-4f0e-b24d-7d76b4b3042d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.facilities_row.field_facility
+    - field.field.paragraph.facilities_row.field_facility_status
+    - paragraphs.paragraphs_type.facilities_row
+id: paragraph.facilities_row.default
+targetEntityType: paragraph
+bundle: facilities_row
+mode: default
+content:
+  field_facility:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_facility_status:
+    weight: 1
+    label: visually_hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+hidden: {  }

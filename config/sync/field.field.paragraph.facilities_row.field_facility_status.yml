@@ -1,0 +1,23 @@
+uuid: 8ae31fe1-bfc1-4a2b-a5ce-ca0df1e2ec35
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_facility_status
+    - paragraphs.paragraphs_type.facilities_row
+id: paragraph.facilities_row.field_facility_status
+field_name: field_facility_status
+entity_type: paragraph
+bundle: facilities_row
+label: 'Facility Status'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

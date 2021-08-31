@@ -1,0 +1,21 @@
+uuid: 95309b7c-b0cb-469f-a44d-a136156d3edf
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - node
+    - paragraphs
+id: node.field_facilities_for_hire
+field_name: field_facilities_for_hire
+entity_type: node
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

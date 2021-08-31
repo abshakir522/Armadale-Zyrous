@@ -4,11 +4,17 @@ status: true
 dependencies:
   config:
     - field.field.node.venues_facilities_for_hire.body
+    - field.field.node.venues_facilities_for_hire.field_banner_image
+    - field.field.node.venues_facilities_for_hire.field_facilities_for_hire
+    - field.field.node.venues_facilities_for_hire.field_location
     - field.field.node.venues_facilities_for_hire.field_region
+    - field.field.node.venues_facilities_for_hire.field_room
     - field.field.node.venues_facilities_for_hire.field_upload_images
     - node.type.venues_facilities_for_hire
   module:
     - image
+    - paragraphs_table
+    - simple_gmap
     - text
     - user
 id: node.venues_facilities_for_hire.default
@@ -23,6 +29,55 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_banner_image:
+    weight: 107
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_facilities_for_hire:
+    type: paragraphs_table_formatter
+    weight: 106
+    label: above
+    settings:
+      view_mode: default
+      vertical: false
+      caption: ''
+      mode: ''
+      chart_type: ''
+      chart_width: 900
+      chart_height: 300
+      import: ''
+      empty_cell_value: false
+      empty: false
+      ajax: false
+      custom_class: ''
+      hide_line_operations: false
+    third_party_settings: {  }
+    region: content
+  field_location:
+    weight: 104
+    label: above
+    settings:
+      include_map: true
+      apikey: ''
+      iframe_width: 100%
+      iframe_height: 100%
+      iframe_title: ''
+      static_scale: 1
+      link_text: 'View larger map'
+      zoom_level: 14
+      map_type: m
+      langcode: en
+      include_static_map: false
+      include_link: false
+      include_text: false
+    third_party_settings: {  }
+    type: simple_gmap
+    region: content
   field_region:
     weight: 102
     label: above
@@ -30,6 +85,26 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  field_room:
+    type: paragraphs_table_formatter
+    weight: 105
+    label: above
+    settings:
+      view_mode: default
+      vertical: false
+      caption: ''
+      mode: ''
+      chart_type: ''
+      chart_width: 900
+      chart_height: 300
+      import: ''
+      empty_cell_value: false
+      empty: false
+      ajax: false
+      custom_class: ''
+      hide_line_operations: false
+    third_party_settings: {  }
     region: content
   field_upload_images:
     weight: 103
@@ -42,7 +117,7 @@ content:
     region: content
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }

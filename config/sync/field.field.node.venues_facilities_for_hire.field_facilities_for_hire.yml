@@ -1,0 +1,34 @@
+uuid: 2cb701e3-5266-487e-8a0a-043e9614c465
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_facilities_for_hire
+    - node.type.venues_facilities_for_hire
+    - paragraphs.paragraphs_type.facilities_row
+  module:
+    - entity_reference_revisions
+id: node.venues_facilities_for_hire.field_facilities_for_hire
+field_name: field_facilities_for_hire
+entity_type: node
+bundle: venues_facilities_for_hire
+label: 'Facilities for Hire'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      facilities_row: facilities_row
+    target_bundles_drag_drop:
+      facilities_row:
+        enabled: true
+        weight: 3
+      room_row:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

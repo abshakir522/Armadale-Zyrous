@@ -1,0 +1,19 @@
+uuid: afbf4aba-117e-4357-a66b-6fe78c8689a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_room
+    - paragraphs.paragraphs_type.room_row
+id: paragraph.room_row.field_room
+field_name: field_room
+entity_type: paragraph
+bundle: room_row
+label: Room
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
