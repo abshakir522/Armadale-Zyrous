@@ -9,13 +9,17 @@ label: 'Authenticated user'
 weight: 1
 is_admin: false
 permissions:
+  - 'access checkout'
   - 'access comments'
   - 'access content'
   - 'access shortcuts'
   - 'access site-wide contact form'
+  - 'manage own commerce_payment_method'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
   - 'use text format basic_html'
   - 'view calendar data for any availability_daily event'
   - 'view calendar data for any availability_hourly event'
+  - 'view commerce_product'
+  - 'view own commerce_order'

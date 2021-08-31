@@ -1,0 +1,10 @@
+uuid: 2b2d6737-71b5-45e0-b17c-b998a1b71d31
+langcode: en
+status: true
+dependencies:
+  module:
+    - bat
+id: bat_type_group.token
+label: Token
+targetEntityType: bat_type_group
+cache: true

@@ -1,0 +1,10 @@
+uuid: a71246c8-61a6-437f-9b0e-f71c35d4e4ea
+langcode: en
+status: true
+dependencies:
+  module:
+    - bat_event
+id: state.token
+label: Token
+targetEntityType: state
+cache: true
