@@ -10,6 +10,7 @@ module:
   bat_event_series: 0
   bat_event_ui: 0
   bat_fullcalendar: 0
+  bat_search: 0
   bat_unit: 0
   bee: 0
   big_pipe: 0
