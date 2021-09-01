@@ -1,0 +1,20 @@
+# entityquery.conroller:
+#   path: '/query'
+#   defaults:
+#     _controller: '\Drupal\bat_search\Controller\EntityQuery::query'
+#     _title: 'Query Articles Hello'
+#   requirements:
+#     _permission: 'access content'
+
+bat_search.node.facility_hire:
+  path: '/node/{node}/facility-hire'
+  defaults:
+    _title: 'Regular Facility Reservation'
+    _form: '\Drupal\bat_search\Form\RegularFacilityHire'
+  options:
+    parameters:
+      node:
+        type: entity:node
+  requirements:
+    _bee_add_reservation_access: 'node'
+
