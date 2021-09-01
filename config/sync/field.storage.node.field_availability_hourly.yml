@@ -1,0 +1,20 @@
+uuid: 4f7992ed-7903-4190-b7bd-0557a25a4155
+langcode: en
+status: true
+dependencies:
+  module:
+    - bat_unit
+    - node
+id: node.field_availability_hourly
+field_name: field_availability_hourly
+entity_type: node
+type: entity_reference
+settings:
+  target_type: bat_unit
+module: core
+locked: true
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
