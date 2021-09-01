@@ -1,0 +1,19 @@
+uuid: df987cf0-357c-4c02-9ced-8a851ae0c837
+langcode: en
+status: true
+dependencies:
+  config:
+    - bat_event.event_type.availability_hourly
+    - field.storage.bat_event.field_organization
+id: bat_event.availability_hourly.field_organization
+field_name: field_organization
+entity_type: bat_event
+bundle: availability_hourly
+label: Organization
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

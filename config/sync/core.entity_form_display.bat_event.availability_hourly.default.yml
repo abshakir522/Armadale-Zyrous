@@ -8,6 +8,7 @@ dependencies:
     - field.field.bat_event.availability_hourly.event_dates
     - field.field.bat_event.availability_hourly.event_series
     - field.field.bat_event.availability_hourly.event_state_reference
+    - field.field.bat_event.availability_hourly.field_organization
   module:
     - datetime_range
 id: bat_event.availability_hourly.default
@@ -40,6 +41,14 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    region: content
+  field_organization:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   uid:
     type: entity_reference_autocomplete
