@@ -13,6 +13,7 @@ module:
   bat_unit: 0
   bee: 0
   big_pipe: 0
+  blazy: 0
   block: 0
   block_content: 0
   breakpoint: 0
@@ -52,6 +53,7 @@ module:
   image: 0
   inline_entity_form: 0
   link: 0
+  media: 0
   menu_link_content: 0
   menu_ui: 0
   node: 0

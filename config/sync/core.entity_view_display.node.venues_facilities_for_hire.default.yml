@@ -107,7 +107,7 @@ content:
     third_party_settings: {  }
     region: content
   field_upload_images:
-    weight: 103
+    weight: 108
     label: above
     settings:
       image_style: ''
