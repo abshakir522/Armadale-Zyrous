@@ -1,4 +1,4 @@
-uuid: 6de12f57-83f0-4cfe-83d3-fcdf1d61440d
+uuid: 6b07ef05-a78b-40b0-a297-d10873ee3b0c
 langcode: en
 status: true
 dependencies:
@@ -6,8 +6,8 @@ dependencies:
     - entity_reference_revisions
     - node
     - paragraphs
-id: node.field_room
-field_name: field_room
+id: node.field_unit_properties
+field_name: field_unit_properties
 entity_type: node
 type: entity_reference_revisions
 settings:

@@ -1,18 +1,18 @@
-uuid: 39c101cf-81ec-4eee-aea6-8f9ee45f2a0f
+uuid: 9f16e457-1338-4829-a26c-364f93108c15
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_room
-    - node.type.venues_facilities_for_hire
+    - field.storage.node.field_unit_properties
+    - node.type.bookable_unit
     - paragraphs.paragraphs_type.room_row
   module:
     - entity_reference_revisions
-id: node.venues_facilities_for_hire.field_room
-field_name: field_room
+id: node.bookable_unit.field_unit_properties
+field_name: field_unit_properties
 entity_type: node
-bundle: venues_facilities_for_hire
-label: Room
+bundle: bookable_unit
+label: 'Unit Properties'
 description: ''
 required: false
 translatable: false
@@ -25,7 +25,10 @@ settings:
     target_bundles:
       room_row: room_row
     target_bundles_drag_drop:
+      facilities_row:
+        weight: 3
+        enabled: false
       room_row:
         enabled: true
-        weight: 2
+        weight: 4
 field_type: entity_reference_revisions

@@ -1,0 +1,23 @@
+uuid: d39c219a-6727-4564-a03a-f6131f796b6a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Bookable Unit'
+type: bookable_unit
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false
+bee:
+  bookable: 1
+  bookable_type: hourly
+  availability: available
+  payment: 0
+  type_id: '2'

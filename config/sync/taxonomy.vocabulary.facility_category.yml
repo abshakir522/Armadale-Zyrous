@@ -1,0 +1,8 @@
+uuid: f4febf7e-0d0a-4a48-942d-876611a208d6
+langcode: en
+status: true
+dependencies: {  }
+name: 'Facility Category'
+vid: facility_category
+description: ''
+weight: 0

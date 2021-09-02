@@ -1,0 +1,23 @@
+uuid: 262d96ae-f4f6-466f-8e55-c2f0e7d21bc9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.bookable_unit
+  module:
+    - text
+id: node.bookable_unit.body
+field_name: body
+entity_type: node
+bundle: bookable_unit
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary
