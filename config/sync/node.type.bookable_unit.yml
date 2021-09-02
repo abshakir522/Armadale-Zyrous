@@ -15,9 +15,3 @@ help: ''
 new_revision: true
 preview_mode: 1
 display_submitted: false
-bee:
-  bookable: 1
-  bookable_type: daily
-  availability: available
-  payment: 1
-  type_id: '5'
