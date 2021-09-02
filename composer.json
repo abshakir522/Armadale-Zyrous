@@ -19,8 +19,10 @@
         "drupal/bootstrap_barrio": "^5.5",
         "drupal/commerce": "^2.26",
         "drupal/inline_entity_form": "^1.0@RC",
+        "drupal/owlcarousel": "^1.0@beta",
         "drupal/paragraphs_table": "^1.6",
         "drupal/simple_gmap": "^3.0",
+        "drupal/views_field_view": "^1.0@beta",
         "drupal/webform": "^6.0",
         "drush/drush": "^10.6",
         "pantheon-upstreams/upstream-configuration": "*"
