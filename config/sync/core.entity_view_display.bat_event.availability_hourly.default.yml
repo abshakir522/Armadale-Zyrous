@@ -1,0 +1,38 @@
+uuid: 10f29d80-4cd9-4667-9365-7a55d99d810d
+langcode: en
+status: true
+dependencies:
+  config:
+    - bat_event.event_type.availability_hourly
+    - field.field.bat_event.availability_hourly.event_bat_unit_reference
+    - field.field.bat_event.availability_hourly.event_dates
+    - field.field.bat_event.availability_hourly.event_series
+    - field.field.bat_event.availability_hourly.event_state_reference
+    - field.field.bat_event.availability_hourly.field_organization
+  module:
+    - user
+id: bat_event.availability_hourly.default
+targetEntityType: bat_event
+bundle: availability_hourly
+mode: default
+content:
+  field_organization:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  uid:
+    label: hidden
+    type: author
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  event_bat_unit_reference: true
+  event_dates: true
+  event_series: true
+  event_state_reference: true

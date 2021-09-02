@@ -1,0 +1,21 @@
+uuid: 658f8474-8be1-4b2e-a5a0-95e331447afa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_open_hours
+    - node.type.bookable_unit
+  module:
+    - office_hours
+id: node.bookable_unit.field_open_hours
+field_name: field_open_hours
+entity_type: node
+bundle: bookable_unit
+label: 'Open Hours'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: office_hours

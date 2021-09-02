@@ -1,0 +1,21 @@
+uuid: 6486066a-4680-4a03-8f4e-73087fbf4acf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_use_open_hours
+    - node.type.bookable_unit
+id: node.bookable_unit.field_use_open_hours
+field_name: field_use_open_hours
+entity_type: node
+bundle: bookable_unit
+label: 'Set Open Hours'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
