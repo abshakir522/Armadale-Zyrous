@@ -4,10 +4,15 @@ status: true
 dependencies:
   config:
     - field.field.user.user.commerce_remote_id
-    - field.field.user.user.user_picture
-    - image.style.thumbnail
+    - field.field.user.user.field_abn
+    - field.field.user.user.field_contact_no_h_
+    - field.field.user.user.field_contact_no_m_
+    - field.field.user.user.field_name
+    - field.field.user.user.field_organisation
+    - field.field.user.user.field_postal_address
   module:
-    - image
+    - address
+    - telephone
     - user
 _core:
   default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
@@ -17,25 +22,57 @@ bundle: user
 mode: default
 content:
   account:
-    weight: -10
-    region: content
-  contact:
-    weight: 5
-    region: content
-  language:
     weight: 0
     region: content
-  timezone:
-    weight: 6
-    region: content
-  user_picture:
-    type: image_image
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+    settings: {  }
     third_party_settings: {  }
-    weight: -1
+  field_abn:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_contact_no_h_:
+    weight: 5
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  field_contact_no_m_:
+    weight: 6
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  field_name:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_organisation:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_postal_address:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
     region: content
 hidden:
   commerce_remote_id: true
+  contact: true
   customer_profiles: true
+  language: true
+  timezone: true

@@ -1,0 +1,21 @@
+uuid: d4cc4c09-9b07-4b05-b527-0e8191d46572
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_contact_no_h_
+  module:
+    - telephone
+    - user
+id: user.user.field_contact_no_h_
+field_name: field_contact_no_h_
+entity_type: user
+bundle: user
+label: 'Contact No (H)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

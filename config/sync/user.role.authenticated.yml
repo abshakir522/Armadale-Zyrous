@@ -22,5 +22,4 @@ permissions:
   - 'view calendar data for any availability_daily event'
   - 'view calendar data for any availability_hourly event'
   - 'view commerce_product'
-  - 'view media'
   - 'view own commerce_order'

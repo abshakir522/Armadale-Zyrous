@@ -1,0 +1,19 @@
+uuid: ea23fb25-3ec4-4f1e-94b2-0e834b8ecde3
+langcode: en
+status: true
+dependencies:
+  module:
+    - telephone
+    - user
+id: user.field_contact_no_h_
+field_name: field_contact_no_h_
+entity_type: user
+type: telephone
+settings: {  }
+module: telephone
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

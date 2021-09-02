@@ -1,11 +1,11 @@
-uuid: 606291f5-59cc-43cc-a1d1-d99a88498c0a
+uuid: 01c53bf9-7009-42b2-8af4-e242f011da85
 langcode: en
 status: true
 dependencies:
   module:
     - commerce_payment_example
-id: example
-label: Example
+id: example_payment_gateway
+label: 'Example Payment Gateway'
 weight: null
 plugin: example_stored_offsite_redirect
 configuration:

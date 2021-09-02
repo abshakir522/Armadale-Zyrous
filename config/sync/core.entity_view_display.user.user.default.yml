@@ -4,10 +4,15 @@ status: true
 dependencies:
   config:
     - field.field.user.user.commerce_remote_id
-    - field.field.user.user.user_picture
-    - image.style.thumbnail
+    - field.field.user.user.field_abn
+    - field.field.user.user.field_contact_no_h_
+    - field.field.user.user.field_contact_no_m_
+    - field.field.user.user.field_name
+    - field.field.user.user.field_organisation
+    - field.field.user.user.field_postal_address
   module:
-    - image
+    - address
+    - telephone
     - user
 _core:
   default_config_hash: V51QPCKkgNREKtSmB9Iu2wmAMEpktVpnzklWaZV8UYo
@@ -16,18 +21,58 @@ targetEntityType: user
 bundle: user
 mode: default
 content:
-  member_for:
-    weight: 5
-    region: content
-  user_picture:
-    type: image
-    weight: 0
-    region: content
+  field_abn:
+    weight: 1
+    label: above
     settings:
-      image_style: thumbnail
-      image_link: content
+      link_to_entity: false
     third_party_settings: {  }
-    label: hidden
+    type: string
+    region: content
+  field_contact_no_h_:
+    weight: 5
+    label: above
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+  field_contact_no_m_:
+    weight: 6
+    label: above
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+  field_name:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_organisation:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_postal_address:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  member_for:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   commerce_remote_id: true
   customer_profiles: true
