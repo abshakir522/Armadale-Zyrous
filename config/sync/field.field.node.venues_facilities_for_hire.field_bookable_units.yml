@@ -10,7 +10,7 @@ id: node.venues_facilities_for_hire.field_bookable_units
 field_name: field_bookable_units
 entity_type: node
 bundle: venues_facilities_for_hire
-label: 'Bookable Units'
+label: Rooms
 description: ''
 required: false
 translatable: false
