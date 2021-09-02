@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.venues_facilities_for_hire.body
+    - field.field.node.venues_facilities_for_hire.field_availability_daily
     - field.field.node.venues_facilities_for_hire.field_availability_hourly
     - field.field.node.venues_facilities_for_hire.field_banner_image
     - field.field.node.venues_facilities_for_hire.field_facilities_for_hire
@@ -37,6 +38,7 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_availability_daily: true
   field_availability_hourly: true
   field_banner_image: true
   field_facilities_for_hire: true
