@@ -73,21 +73,21 @@ content:
     type: paragraphs_table_widget
     weight: 15
     settings:
+      vertical: false
+      paste_clipboard: false
+      features:
+        duplicate: '0'
+      show_all: false
+      duplicate: false
       title: Paragraph
       title_plural: Paragraphs
       edit_mode: open
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
-      vertical: false
-      paste_clipboard: false
-      show_all: false
-      duplicate: false
-      features:
-        duplicate: duplicate
       closed_mode: summary
       autocollapse: none
       closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
     third_party_settings: {  }
     region: content
   field_location:
