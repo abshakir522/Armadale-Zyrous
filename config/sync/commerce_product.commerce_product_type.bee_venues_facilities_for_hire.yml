@@ -1,0 +1,12 @@
+uuid: b94b17a4-ec29-4bae-a3d9-93d489d22ad3
+langcode: en
+status: true
+dependencies: {  }
+id: bee_venues_facilities_for_hire
+label: 'Venues/Facilities for hire'
+description: null
+variationType: bee
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

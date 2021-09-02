@@ -1,0 +1,12 @@
+uuid: 720e4621-2dd0-4d8e-8012-3908fd3b4b0c
+langcode: en
+status: true
+dependencies: {  }
+id: bee_bookable_unit
+label: 'Bookable Unit'
+description: null
+variationType: bee
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

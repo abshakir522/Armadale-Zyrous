@@ -18,6 +18,7 @@
         "drupal/bee": "^1.2",
         "drupal/bootstrap_barrio": "^5.5",
         "drupal/commerce": "^2.26",
+        "drupal/inline_entity_form": "^1.0@RC",
         "drupal/paragraphs_table": "^1.6",
         "drupal/simple_gmap": "^3.0",
         "drupal/webform": "^6.0",

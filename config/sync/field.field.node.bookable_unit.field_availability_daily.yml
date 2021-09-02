@@ -1,0 +1,21 @@
+uuid: 9251e919-e95a-48e1-bace-279d9c929340
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_availability_daily
+    - node.type.bookable_unit
+id: node.bookable_unit.field_availability_daily
+field_name: field_availability_daily
+entity_type: node
+bundle: bookable_unit
+label: Availability
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:bat_unit'
+  handler_settings: {  }
+field_type: entity_reference

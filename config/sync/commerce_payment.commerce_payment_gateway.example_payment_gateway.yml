@@ -1,0 +1,19 @@
+uuid: 01c53bf9-7009-42b2-8af4-e242f011da85
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_payment_example
+id: example_payment_gateway
+label: 'Example Payment Gateway'
+weight: null
+plugin: example_stored_offsite_redirect
+configuration:
+  redirect_method: post
+  display_label: 'Example Stored Offsite'
+  mode: test
+  payment_method_types:
+    - credit_card
+  collect_billing_information: true
+conditions: {  }
+conditionOperator: AND

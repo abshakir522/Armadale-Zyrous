@@ -1,0 +1,29 @@
+uuid: ac454138-7e9a-4a1c-9287-6ada08d4e3f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_facility_category
+    - node.type.bookable_unit
+    - taxonomy.vocabulary.facility_category
+id: node.bookable_unit.field_facility_category
+field_name: field_facility_category
+entity_type: node
+bundle: bookable_unit
+label: 'Facility Category'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      facility_category: facility_category
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

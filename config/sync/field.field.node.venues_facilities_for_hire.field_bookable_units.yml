@@ -1,0 +1,29 @@
+uuid: 3a904262-d047-4598-856b-d172271dee34
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bookable_units
+    - node.type.bookable_unit
+    - node.type.venues_facilities_for_hire
+id: node.venues_facilities_for_hire.field_bookable_units
+field_name: field_bookable_units
+entity_type: node
+bundle: venues_facilities_for_hire
+label: 'Bookable Units'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      bookable_unit: bookable_unit
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,24 @@
+uuid: 5a9b2eb7-02d4-4ce5-bfd2-87056b5e1301
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_price
+    - node.type.venues_facilities_for_hire
+  module:
+    - commerce_price
+id: node.venues_facilities_for_hire.field_price
+field_name: field_price
+entity_type: node
+bundle: venues_facilities_for_hire
+label: Price
+description: ''
+required: true
+translatable: true
+default_value:
+  number: 0
+  currency_code: AUD
+default_value_callback: ''
+settings:
+  available_currencies: {  }
+field_type: commerce_price

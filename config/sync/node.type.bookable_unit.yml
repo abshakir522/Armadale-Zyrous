@@ -1,4 +1,4 @@
-uuid: 57316cb6-3fc1-4e8a-b0fb-359c73d97b44
+uuid: d39c219a-6727-4564-a03a-f6131f796b6a
 langcode: en
 status: true
 dependencies:
@@ -6,19 +6,18 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus:
-      - main
-    parent: 'main:'
-name: 'Venues/Facilities for hire'
-type: venues_facilities_for_hire
+    available_menus: {  }
+    parent: ''
+name: 'Bookable Unit'
+type: bookable_unit
 description: ''
 help: ''
 new_revision: true
 preview_mode: 1
-display_submitted: true
+display_submitted: false
 bee:
   bookable: 1
   bookable_type: daily
   availability: available
   payment: 1
-  type_id: '7'
+  type_id: '5'

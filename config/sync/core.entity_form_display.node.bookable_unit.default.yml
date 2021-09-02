@@ -1,0 +1,139 @@
+uuid: b4fed34b-88ed-42d9-a569-a89f8fe4c25b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.bookable_unit.body
+    - field.field.node.bookable_unit.field_availability_daily
+    - field.field.node.bookable_unit.field_availability_hourly
+    - field.field.node.bookable_unit.field_facility_category
+    - field.field.node.bookable_unit.field_open_hours
+    - field.field.node.bookable_unit.field_price
+    - field.field.node.bookable_unit.field_price_frequency
+    - field.field.node.bookable_unit.field_product
+    - field.field.node.bookable_unit.field_unit_properties
+    - field.field.node.bookable_unit.field_use_open_hours
+    - node.type.bookable_unit
+  module:
+    - commerce_price
+    - office_hours
+    - paragraphs
+    - path
+    - text
+id: node.bookable_unit.default
+targetEntityType: node
+bundle: bookable_unit
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 121
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_facility_category:
+    weight: 122
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_open_hours:
+    type: office_hours_default
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_price:
+    type: commerce_price_default
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_price_frequency:
+    type: options_select
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_unit_properties:
+    type: entity_reference_paragraphs
+    weight: 123
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_use_open_hours:
+    type: boolean_checkbox
+    weight: 2
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    region: content
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden:
+  field_availability_daily: true
+  field_availability_hourly: true
+  field_product: true

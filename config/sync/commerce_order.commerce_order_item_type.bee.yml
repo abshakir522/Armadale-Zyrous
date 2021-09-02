@@ -1,0 +1,10 @@
+uuid: 0c05aa6a-0751-491b-a66a-7411044ebd3f
+langcode: en
+status: true
+dependencies: {  }
+label: BEE
+id: bee
+purchasableEntityType: commerce_product_variation
+orderType: default
+traits: {  }
+locked: false

@@ -1,0 +1,10 @@
+uuid: 71e8509d-65bd-4e85-a1b6-135722b55f85
+langcode: en
+status: true
+dependencies: {  }
+id: bee
+label: BEE
+orderItemType: default
+generateTitle: true
+traits: {  }
+locked: false
