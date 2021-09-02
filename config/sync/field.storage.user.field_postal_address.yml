@@ -1,0 +1,19 @@
+uuid: 982f772d-cebb-4c85-a5a3-8d70105b05ea
+langcode: en
+status: true
+dependencies:
+  module:
+    - address
+    - user
+id: user.field_postal_address
+field_name: field_postal_address
+entity_type: user
+type: address
+settings: {  }
+module: address
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

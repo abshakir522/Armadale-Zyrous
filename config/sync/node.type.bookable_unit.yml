@@ -17,7 +17,7 @@ preview_mode: 1
 display_submitted: false
 bee:
   bookable: 1
-  bookable_type: hourly
+  bookable_type: daily
   availability: available
-  payment: 0
-  type_id: '2'
+  payment: 1
+  type_id: '5'

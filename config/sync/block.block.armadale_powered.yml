@@ -1,0 +1,22 @@
+uuid: b27ed7da-28bb-4d7a-b4c1-52dc492f871d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - armadale
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: armadale_powered
+theme: armadale
+region: footer_fifth
+weight: 10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

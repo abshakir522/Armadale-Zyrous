@@ -1,0 +1,6 @@
+uuid: 94e35b01-2f10-4a85-86a2-99c9d17b4b92
+langcode: en
+status: true
+dependencies: {  }
+name: BEE
+type: bee

@@ -1,0 +1,22 @@
+uuid: f55b41b0-4c25-43d8-9f13-672d8900563e
+langcode: en
+status: true
+dependencies:
+  theme:
+    - armadale
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: armadale_local_tasks
+theme: armadale
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

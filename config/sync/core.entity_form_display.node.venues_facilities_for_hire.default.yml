@@ -4,18 +4,23 @@ status: true
 dependencies:
   config:
     - field.field.node.venues_facilities_for_hire.body
+    - field.field.node.venues_facilities_for_hire.field_availability_daily
     - field.field.node.venues_facilities_for_hire.field_availability_hourly
     - field.field.node.venues_facilities_for_hire.field_banner_image
     - field.field.node.venues_facilities_for_hire.field_bookable_units
     - field.field.node.venues_facilities_for_hire.field_facilities_for_hire
     - field.field.node.venues_facilities_for_hire.field_location
     - field.field.node.venues_facilities_for_hire.field_open_hours
+    - field.field.node.venues_facilities_for_hire.field_price
+    - field.field.node.venues_facilities_for_hire.field_price_frequency
+    - field.field.node.venues_facilities_for_hire.field_product
     - field.field.node.venues_facilities_for_hire.field_region
     - field.field.node.venues_facilities_for_hire.field_upload_images
     - field.field.node.venues_facilities_for_hire.field_use_open_hours
     - image.style.thumbnail
     - node.type.venues_facilities_for_hire
   module:
+    - commerce_price
     - image
     - inline_entity_form
     - office_hours
@@ -99,6 +104,18 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_price:
+    type: commerce_price_default
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_price_frequency:
+    type: options_select
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   field_region:
     weight: 9
     settings: {  }
@@ -166,4 +183,6 @@ content:
     region: content
     third_party_settings: {  }
 hidden:
+  field_availability_daily: true
   field_availability_hourly: true
+  field_product: true

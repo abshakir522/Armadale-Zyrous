@@ -1,0 +1,24 @@
+uuid: c2282b94-96a8-4073-b75a-aa484c0ddecb
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.bee_bookable_unit
+    - field.storage.node.field_product
+    - node.type.bookable_unit
+id: node.bookable_unit.field_product
+field_name: field_product
+entity_type: node
+bundle: bookable_unit
+label: Product
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:commerce_product'
+  handler_settings:
+    target_bundles:
+      bee_bookable_unit: bee_bookable_unit
+field_type: entity_reference

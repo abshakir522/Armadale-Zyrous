@@ -5,12 +5,16 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.venues_facilities_for_hire.body
+    - field.field.node.venues_facilities_for_hire.field_availability_daily
     - field.field.node.venues_facilities_for_hire.field_availability_hourly
     - field.field.node.venues_facilities_for_hire.field_banner_image
     - field.field.node.venues_facilities_for_hire.field_bookable_units
     - field.field.node.venues_facilities_for_hire.field_facilities_for_hire
     - field.field.node.venues_facilities_for_hire.field_location
     - field.field.node.venues_facilities_for_hire.field_open_hours
+    - field.field.node.venues_facilities_for_hire.field_price
+    - field.field.node.venues_facilities_for_hire.field_price_frequency
+    - field.field.node.venues_facilities_for_hire.field_product
     - field.field.node.venues_facilities_for_hire.field_region
     - field.field.node.venues_facilities_for_hire.field_upload_images
     - field.field.node.venues_facilities_for_hire.field_use_open_hours
@@ -37,12 +41,16 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_availability_daily: true
   field_availability_hourly: true
   field_banner_image: true
   field_bookable_units: true
   field_facilities_for_hire: true
   field_location: true
   field_open_hours: true
+  field_price: true
+  field_price_frequency: true
+  field_product: true
   field_region: true
   field_upload_images: true
   field_use_open_hours: true
