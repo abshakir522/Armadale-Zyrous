@@ -1,0 +1,33 @@
+uuid: 65157a62-ad21-4a4e-ad9f-61a3b3cdb30d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.venues_facilities_for_hire
+  module:
+    - node
+    - views
+  theme:
+    - bartik
+id: views_block__venues_facilities_for_hire_block_1_2
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:venues_facilities_for_hire-block_1'
+settings:
+  id: 'views_block:venues_facilities_for_hire-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      venues_facilities_for_hire: venues_facilities_for_hire
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
