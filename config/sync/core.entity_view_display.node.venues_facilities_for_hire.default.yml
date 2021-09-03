@@ -1,29 +1,19 @@
-uuid: 35258d2b-de1d-48ed-8bc7-5f93ebbedc4f
+uuid: 6cd912fc-ea51-4eb3-8b2c-96997c9ae922
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.venues_facilities_for_hire.body
-    - field.field.node.venues_facilities_for_hire.field_availability_daily
-    - field.field.node.venues_facilities_for_hire.field_availability_hourly
     - field.field.node.venues_facilities_for_hire.field_banner_image
     - field.field.node.venues_facilities_for_hire.field_bookable_units
     - field.field.node.venues_facilities_for_hire.field_facilities_for_hire
     - field.field.node.venues_facilities_for_hire.field_location
-    - field.field.node.venues_facilities_for_hire.field_open_hours
-    - field.field.node.venues_facilities_for_hire.field_price
-    - field.field.node.venues_facilities_for_hire.field_price_frequency
-    - field.field.node.venues_facilities_for_hire.field_product
     - field.field.node.venues_facilities_for_hire.field_region
     - field.field.node.venues_facilities_for_hire.field_upload_images
-    - field.field.node.venues_facilities_for_hire.field_use_open_hours
     - node.type.venues_facilities_for_hire
   module:
     - image
-    - office_hours
-    - owlcarousel
     - paragraphs_table
-    - simple_gmap
     - text
     - user
 id: node.venues_facilities_for_hire.default
@@ -38,26 +28,8 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_availability_daily:
-    type: entity_reference_entity_view
-    region: content
-    label: above
-    settings:
-      view_mode: daily_calendar
-      link: false
-    weight: 117
-    third_party_settings: {  }
-  field_availability_hourly:
-    type: entity_reference_entity_view
-    region: content
-    label: above
-    settings:
-      view_mode: hourly_calendar
-      link: false
-    weight: 8
-    third_party_settings: {  }
   field_banner_image:
-    weight: 6
+    weight: 2
     label: above
     settings:
       image_style: ''
@@ -67,7 +39,7 @@ content:
     region: content
   field_facilities_for_hire:
     type: paragraphs_table_formatter
-    weight: 5
+    weight: 3
     label: above
     settings:
       view_mode: default
@@ -89,51 +61,12 @@ content:
     weight: 4
     label: above
     settings:
-      include_map: true
-      apikey: ''
-      iframe_width: 100%
-      iframe_height: 100%
-      iframe_title: ''
-      static_scale: 1
-      link_text: 'View larger map'
-      zoom_level: 14
-      map_type: m
-      langcode: en
-      include_static_map: false
-      include_link: false
-      include_text: false
+      link_to_entity: false
     third_party_settings: {  }
-    type: simple_gmap
+    type: string
     region: content
-  field_open_hours:
-    type: office_hours_table
-    region: content
-    label: above
-    settings:
-      day_format: long
-      time_format: G
-      compress: false
-      grouped: false
-      show_closed: all
-      closed_format: Closed
-      separator:
-        days: '<br />'
-        grouped_days: ' - '
-        day_hours: ': '
-        hours_hours: '-'
-        more_hours: ', '
-      current_status:
-        position: ''
-        open_text: 'Currently open!'
-        closed_text: 'Currently closed'
-      schema:
-        enabled: false
-      timezone_field: ''
-      office_hours_first_day: ''
-    weight: 7
-    third_party_settings: {  }
   field_region:
-    weight: 2
+    weight: 5
     label: above
     settings:
       link: true
@@ -141,38 +74,13 @@ content:
     type: entity_reference_label
     region: content
   field_upload_images:
-    weight: 3
+    weight: 6
     label: above
     settings:
       image_style: ''
       image_link: ''
-      items: '1'
-      itemsDesktop: '[1199,4]'
-      itemsDesktopSmall: '[979,3]'
-      itemsTablet: '[768,2]'
-      itemsMobile: '[479,1]'
-      slideSpeed: '200'
-      paginationSpeed: '800'
-      rewindSpeed: '1000'
-      autoPlay: '1'
-      stopOnHover: '1'
-      navigation: '1'
-      prevText: prev
-      nextText: next
-      rewindNav: '1'
-      pagination: '1'
-      responsive: '1'
-      responsiveRefreshRate: '200'
-      mouseDrag: '1'
-      touchDrag: '1'
-      transitionStyle: fade
-      singleItem: 0
-      itemsScaleUp: 0
-      scrollPerPage: 0
-      paginationNumbers: 0
-      navigationText: '["prev","next"]'
     third_party_settings: {  }
-    type: owlcarousel_field_formatter
+    type: image
     region: content
   links:
     weight: 0
@@ -181,7 +89,3 @@ content:
     third_party_settings: {  }
 hidden:
   field_bookable_units: true
-  field_price: true
-  field_price_frequency: true
-  field_product: true
-  field_use_open_hours: true

@@ -1,4 +1,4 @@
-uuid: 57316cb6-3fc1-4e8a-b0fb-359c73d97b44
+uuid: 59a6cd8d-a03c-4f58-8b2c-1bbb0807644a
 langcode: en
 status: true
 dependencies:
@@ -6,13 +6,12 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus:
-      - main
-    parent: 'main:'
+    available_menus: {  }
+    parent: ''
 name: 'Venues/Facilities for hire'
 type: venues_facilities_for_hire
 description: ''
 help: ''
 new_revision: true
 preview_mode: 1
-display_submitted: true
+display_submitted: false
