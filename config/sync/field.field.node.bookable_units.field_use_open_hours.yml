@@ -1,14 +1,14 @@
-uuid: 6486066a-4680-4a03-8f4e-73087fbf4acf
+uuid: 04b39789-8ed3-4e10-a289-4061302d3068
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_use_open_hours
-    - node.type.bookable_unit
-id: node.bookable_unit.field_use_open_hours
+    - node.type.bookable_units
+id: node.bookable_units.field_use_open_hours
 field_name: field_use_open_hours
 entity_type: node
-bundle: bookable_unit
+bundle: bookable_units
 label: 'Set Open Hours'
 description: ''
 required: false

@@ -1,4 +1,4 @@
-uuid: d39c219a-6727-4564-a03a-f6131f796b6a
+uuid: cc2b65e0-5dbc-4b93-8203-93cb2d8841a9
 langcode: en
 status: true
 dependencies:
@@ -15,9 +15,9 @@ third_party_settings:
       bookable_type: hourly
       availability: available
       payment: 0
-      type_id: '5'
-name: 'Bookable Unit'
-type: bookable_unit
+      type_id: '6'
+name: 'Bookable Units'
+type: bookable_units
 description: ''
 help: ''
 new_revision: true

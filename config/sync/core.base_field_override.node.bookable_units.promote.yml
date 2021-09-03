@@ -1,13 +1,13 @@
-uuid: 5443075b-50db-493a-8b69-69c3202aae79
+uuid: f1d9c9a9-d4bc-4fc7-83d4-9c2f37d2fe2d
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.bookable_unit
-id: node.bookable_unit.promote
+    - node.type.bookable_units
+id: node.bookable_units.promote
 field_name: promote
 entity_type: node
-bundle: bookable_unit
+bundle: bookable_units
 label: 'Promoted to front page'
 description: ''
 required: false

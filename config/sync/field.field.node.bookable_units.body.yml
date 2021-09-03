@@ -1,16 +1,16 @@
-uuid: 262d96ae-f4f6-466f-8e55-c2f0e7d21bc9
+uuid: 8002ab46-3384-4f35-8e73-17abb8f736c1
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.bookable_unit
+    - node.type.bookable_units
   module:
     - text
-id: node.bookable_unit.body
+id: node.bookable_units.body
 field_name: body
 entity_type: node
-bundle: bookable_unit
+bundle: bookable_units
 label: Body
 description: ''
 required: false

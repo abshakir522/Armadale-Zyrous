@@ -1,27 +1,23 @@
-uuid: d037c4a6-753a-4bbe-91e2-61c678a0fbc7
+uuid: 7f0735ba-dd1e-4610-9eea-6c0c5fac27f2
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.bookable_unit.body
-    - field.field.node.bookable_unit.field_availability_daily
-    - field.field.node.bookable_unit.field_availability_hourly
-    - field.field.node.bookable_unit.field_facility_category
-    - field.field.node.bookable_unit.field_open_hours
-    - field.field.node.bookable_unit.field_price
-    - field.field.node.bookable_unit.field_price_frequency
-    - field.field.node.bookable_unit.field_product
-    - field.field.node.bookable_unit.field_unit_properties
-    - field.field.node.bookable_unit.field_use_open_hours
-    - node.type.bookable_unit
+    - field.field.node.bookable_units.body
+    - field.field.node.bookable_units.field_availability_hourly
+    - field.field.node.bookable_units.field_facility_category
+    - field.field.node.bookable_units.field_open_hours
+    - field.field.node.bookable_units.field_unit_properties
+    - field.field.node.bookable_units.field_use_open_hours
+    - node.type.bookable_units
   module:
     - entity_reference_revisions
     - office_hours
     - text
     - user
-id: node.bookable_unit.default
+id: node.bookable_units.default
 targetEntityType: node
-bundle: bookable_unit
+bundle: bookable_units
 mode: default
 content:
   body:
@@ -31,15 +27,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_availability_daily:
-    type: entity_reference_entity_view
-    region: content
-    label: above
-    settings:
-      view_mode: daily_calendar
-      link: false
-    weight: 107
-    third_party_settings: {  }
   field_availability_hourly:
     type: entity_reference_entity_view
     region: content
@@ -47,10 +34,10 @@ content:
     settings:
       view_mode: hourly_calendar
       link: false
-    weight: 110
+    weight: 103
     third_party_settings: {  }
   field_facility_category:
-    weight: 104
+    weight: 106
     label: above
     settings:
       link: true
@@ -85,13 +72,13 @@ content:
     weight: 102
     third_party_settings: {  }
   field_unit_properties:
-    type: entity_reference_revisions_entity_view
     weight: 105
     label: above
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
     region: content
   links:
     weight: 100
@@ -99,7 +86,4 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  field_price: true
-  field_price_frequency: true
-  field_product: true
   field_use_open_hours: true

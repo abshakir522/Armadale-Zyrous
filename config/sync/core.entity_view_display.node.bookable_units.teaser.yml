@@ -1,0 +1,40 @@
+uuid: 29b4c204-af90-4f33-ac5d-11192ad2b617
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.bookable_units.body
+    - field.field.node.bookable_units.field_availability_hourly
+    - field.field.node.bookable_units.field_facility_category
+    - field.field.node.bookable_units.field_open_hours
+    - field.field.node.bookable_units.field_unit_properties
+    - field.field.node.bookable_units.field_use_open_hours
+    - node.type.bookable_units
+  module:
+    - text
+    - user
+id: node.bookable_units.teaser
+targetEntityType: node
+bundle: bookable_units
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_availability_hourly: true
+  field_facility_category: true
+  field_open_hours: true
+  field_unit_properties: true
+  field_use_open_hours: true

@@ -1,14 +1,14 @@
-uuid: 9251e919-e95a-48e1-bace-279d9c929340
+uuid: 648b9a2b-7720-4948-9b24-5646bd4c6bec
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_availability_daily
-    - node.type.bookable_unit
-id: node.bookable_unit.field_availability_daily
-field_name: field_availability_daily
+    - field.storage.node.field_availability_hourly
+    - node.type.bookable_units
+id: node.bookable_units.field_availability_hourly
+field_name: field_availability_hourly
 entity_type: node
-bundle: bookable_unit
+bundle: bookable_units
 label: Availability
 description: ''
 required: false

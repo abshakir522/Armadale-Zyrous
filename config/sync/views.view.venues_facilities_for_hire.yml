@@ -871,9 +871,20 @@ display:
       defaults:
         style: false
         row: false
+        relationships: false
       row:
         type: fields
         options: {  }
+      relationships:
+        field_bookable_units:
+          id: field_bookable_units
+          table: node__field_bookable_units
+          field: field_bookable_units
+          relationship: none
+          group_type: group
+          admin_label: 'field_bookable_units: Content'
+          required: false
+          plugin_id: standard
     cache_metadata:
       max-age: -1
       contexts:
