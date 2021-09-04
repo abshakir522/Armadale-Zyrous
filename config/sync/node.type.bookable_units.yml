@@ -3,11 +3,19 @@ langcode: en
 status: true
 dependencies:
   module:
+    - bee
     - menu_ui
 third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
+  bee:
+    bee:
+      bookable: 1
+      bookable_type: hourly
+      availability: available
+      payment: 0
+      type_id: '7'
 name: 'Bookable Units'
 type: bookable_units
 description: ''

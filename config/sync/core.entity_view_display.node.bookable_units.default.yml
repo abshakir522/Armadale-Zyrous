@@ -34,7 +34,7 @@ content:
     settings:
       view_mode: hourly_calendar
       link: false
-    weight: 103
+    weight: 107
     third_party_settings: {  }
   field_facility_category:
     weight: 106
